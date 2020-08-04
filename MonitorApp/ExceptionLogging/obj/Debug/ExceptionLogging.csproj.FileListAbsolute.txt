@@ -44,3 +44,26 @@ C:\Users\vivek\Documents\Visual Studio 2015\Projects\ApplicationInsight\Employee
 C:\Users\vivek\Documents\Visual Studio 2015\Projects\ApplicationInsight\EmployeeApp\ExceptionLogging\bin\Debug\System.Memory.xml
 C:\Users\vivek\Documents\Visual Studio 2015\Projects\ApplicationInsight\EmployeeApp\ExceptionLogging\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
 C:\Users\vivek\Documents\Visual Studio 2015\Projects\ApplicationInsight\EmployeeApp\ExceptionLogging\obj\Debug\ExceptionLogging.csproj.CopyComplete
+C:\Users\vivek\Documents\GitHub\ApplicationInsights\ApplicationInsightDemo\MonitorApp\ExceptionLogging\bin\Debug\ExceptionLogging.dll.config
+C:\Users\vivek\Documents\GitHub\ApplicationInsights\ApplicationInsightDemo\MonitorApp\ExceptionLogging\bin\Debug\ExceptionLogging.dll
+C:\Users\vivek\Documents\GitHub\ApplicationInsights\ApplicationInsightDemo\MonitorApp\ExceptionLogging\bin\Debug\ExceptionLogging.pdb
+C:\Users\vivek\Documents\GitHub\ApplicationInsights\ApplicationInsightDemo\MonitorApp\ExceptionLogging\bin\Debug\DocumentFormat.OpenXml.dll
+C:\Users\vivek\Documents\GitHub\ApplicationInsights\ApplicationInsightDemo\MonitorApp\ExceptionLogging\bin\Debug\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\vivek\Documents\GitHub\ApplicationInsights\ApplicationInsightDemo\MonitorApp\ExceptionLogging\bin\Debug\Microsoft.ApplicationInsights.dll
+C:\Users\vivek\Documents\GitHub\ApplicationInsights\ApplicationInsightDemo\MonitorApp\ExceptionLogging\bin\Debug\System.Buffers.dll
+C:\Users\vivek\Documents\GitHub\ApplicationInsights\ApplicationInsightDemo\MonitorApp\ExceptionLogging\bin\Debug\System.Diagnostics.DiagnosticSource.dll
+C:\Users\vivek\Documents\GitHub\ApplicationInsights\ApplicationInsightDemo\MonitorApp\ExceptionLogging\bin\Debug\System.Memory.dll
+C:\Users\vivek\Documents\GitHub\ApplicationInsights\ApplicationInsightDemo\MonitorApp\ExceptionLogging\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\vivek\Documents\GitHub\ApplicationInsights\ApplicationInsightDemo\MonitorApp\ExceptionLogging\bin\Debug\DocumentFormat.OpenXml.xml
+C:\Users\vivek\Documents\GitHub\ApplicationInsights\ApplicationInsightDemo\MonitorApp\ExceptionLogging\bin\Debug\Microsoft.AI.PerfCounterCollector.pdb
+C:\Users\vivek\Documents\GitHub\ApplicationInsights\ApplicationInsightDemo\MonitorApp\ExceptionLogging\bin\Debug\Microsoft.AI.PerfCounterCollector.xml
+C:\Users\vivek\Documents\GitHub\ApplicationInsights\ApplicationInsightDemo\MonitorApp\ExceptionLogging\bin\Debug\Microsoft.ApplicationInsights.pdb
+C:\Users\vivek\Documents\GitHub\ApplicationInsights\ApplicationInsightDemo\MonitorApp\ExceptionLogging\bin\Debug\Microsoft.ApplicationInsights.xml
+C:\Users\vivek\Documents\GitHub\ApplicationInsights\ApplicationInsightDemo\MonitorApp\ExceptionLogging\bin\Debug\System.Buffers.xml
+C:\Users\vivek\Documents\GitHub\ApplicationInsights\ApplicationInsightDemo\MonitorApp\ExceptionLogging\bin\Debug\System.Diagnostics.DiagnosticSource.xml
+C:\Users\vivek\Documents\GitHub\ApplicationInsights\ApplicationInsightDemo\MonitorApp\ExceptionLogging\bin\Debug\System.Memory.xml
+C:\Users\vivek\Documents\GitHub\ApplicationInsights\ApplicationInsightDemo\MonitorApp\ExceptionLogging\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\vivek\Documents\GitHub\ApplicationInsights\ApplicationInsightDemo\MonitorApp\ExceptionLogging\obj\Debug\ExceptionLogging.csproj.CopyComplete
+C:\Users\vivek\Documents\GitHub\ApplicationInsights\ApplicationInsightDemo\MonitorApp\ExceptionLogging\obj\Debug\ExceptionLogging.dll
+C:\Users\vivek\Documents\GitHub\ApplicationInsights\ApplicationInsightDemo\MonitorApp\ExceptionLogging\obj\Debug\ExceptionLogging.pdb
+C:\Users\vivek\Documents\GitHub\ApplicationInsights\ApplicationInsightDemo\MonitorApp\ExceptionLogging\obj\Debug\ExceptionLogging.csprojAssemblyReference.cache

@@ -44,7 +44,9 @@ namespace ExceptionLogging
          public LogException(string Name)
         {
             TelemetryConfiguration configuration = TelemetryConfiguration.Active;
-            configuration.InstrumentationKey = "29502735-045e-4be0-ac49-7e75782e5582";
+            //configuration.InstrumentationKey = "29502735-045e-4be0-ac49-7e75782e5582";
+
+            configuration.InstrumentationKey = "c03887f2-1122-4e53-b8f1-30f6bbd96846";
             configuration.TelemetryInitializers.Add(new CloudRoleNameInitializer(Name));
             QuickPulseTelemetryProcessor processor = null;
             configuration.TelemetryProcessorChainBuilder

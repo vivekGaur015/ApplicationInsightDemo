@@ -27,8 +27,6 @@ namespace EmployeeApp.Controllers
                 LogException.TrackViewPages("Employee List Page", Request.Url.AbsoluteUri);
 
 
-                // throw new Exception("Failed to get result");
-
                 if (Items.Count==0)
                 {
                     Items.Add(new Employee { ID = 1, CreatedDate = DateTime.Now, EmpCode = "101", Name = "Vivek" });

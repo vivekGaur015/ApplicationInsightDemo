@@ -13,6 +13,7 @@ namespace EmployeeApp
         {
             AreaRegistration.RegisterAllAreas();
             RouteConfig.RegisterRoutes(RouteTable.Routes);
+       
         }
     }
 }

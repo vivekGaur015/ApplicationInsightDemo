@@ -1,4 +1,5 @@
-﻿using System;
+﻿using AzureDashboard.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -8,10 +9,26 @@ namespace AzureDashboard.Controllers
 {
     public class DashboardController : Controller
     {
+
+
         // GET: Dashboard
         public ActionResult Index()
         {
-            return View();
+            var ResultData = new ExceptionClass.Example(); 
+            Designation role = Designation.Manager;
+            if (role == Designation.Employee)
+            {
+
+                ResultData = CallAzureAPIs.CallExceptionTelemetry();
+            }
+            else if (role == Designation.Manager)
+            {
+                ResultData = CallAzureAPIs.GetTotalException();
+            }
+
+            ViewBag.RoleName = role; 
+
+            return View(ResultData);
         }
     }
 }
