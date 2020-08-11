@@ -256,3 +256,4 @@ C:\Users\vivek\Documents\GitHub\ApplicationInsights\ApplicationInsightDemo\Monit
 C:\Users\vivek\Documents\GitHub\ApplicationInsights\ApplicationInsightDemo\MonitorApp\DepartmentApp\obj\Debug\DepartmentApp.csproj.CopyComplete
 C:\Users\vivek\Documents\GitHub\ApplicationInsights\ApplicationInsightDemo\MonitorApp\DepartmentApp\obj\Debug\DepartmentApp.dll
 C:\Users\vivek\Documents\GitHub\ApplicationInsights\ApplicationInsightDemo\MonitorApp\DepartmentApp\obj\Debug\DepartmentApp.pdb
+C:\Users\vivek\Documents\GitHub\ApplicationInsights\ApplicationInsightDemo\MonitorApp\DepartmentApp\bin\System.Numerics.Vectors.xml

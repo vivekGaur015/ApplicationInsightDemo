@@ -15,6 +15,7 @@ namespace ExceptionLogging
         public CloudRoleNameInitializer(string Name)
         {
             _roleName = Name;
+           
         }
 
         public void Initialize(Microsoft.ApplicationInsights.Channel.ITelemetry telemetry)
@@ -24,8 +25,8 @@ namespace ExceptionLogging
 
             requestTelemetry.Properties.Add("TestException", "TestProject");
 
-            telemetry.Context.Cloud.RoleInstance = _roleName;
-            telemetry.Context.Cloud.RoleName = "Test Role";
+            telemetry.Context.Cloud.RoleInstance = this._roleName;
+            telemetry.Context.Cloud.RoleName = this._roleName;
         }
     }
 }

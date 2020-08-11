@@ -41,13 +41,14 @@ namespace ExceptionLogging
 
         private static TelemetryClient _telemetryClient;
 
-         public LogException(string Name)
+         public LogException(string RoleName)
         {
             TelemetryConfiguration configuration = TelemetryConfiguration.Active;
             //configuration.InstrumentationKey = "29502735-045e-4be0-ac49-7e75782e5582";
 
             configuration.InstrumentationKey = "c03887f2-1122-4e53-b8f1-30f6bbd96846";
-            configuration.TelemetryInitializers.Add(new CloudRoleNameInitializer(Name));
+            
+            //configuration.TelemetryInitializers.Add(new CloudRoleNameInitializer());
             QuickPulseTelemetryProcessor processor = null;
             configuration.TelemetryProcessorChainBuilder
               .Use((next) =>
@@ -62,6 +63,7 @@ namespace ExceptionLogging
             QuickPulse.RegisterTelemetryProcessor(processor);
 
             _telemetryClient = new TelemetryClient(configuration);
+            _telemetryClient.Context.Cloud.RoleName = RoleName;
             Telemetry = _telemetryClient;
         }
         public static TelemetryClient Telemetry { get; private set; }

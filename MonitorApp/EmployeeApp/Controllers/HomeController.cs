@@ -11,7 +11,7 @@ namespace EmployeeApp.Controllers
     public class HomeController : Controller
     {
         public static readonly List<Employee> Items = new List<Employee>();
-      //  CloudRoleNameInitializer cloudRoleNameInitializer = new CloudRoleNameInitializer("Employee");
+      
         LogException logException = new LogException("Employee Project");
         
         // GET: Home

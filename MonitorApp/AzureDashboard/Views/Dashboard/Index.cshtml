@@ -1,83 +1,151 @@
 ﻿@using AzureDashboard.Models;
-@model AzureDashboard.ExceptionClass.Example
+@model AzureDashboard.LogsViewModel
 @{
     ViewBag.Title = "Index";
 }
 
-<br />
-<br />
+    <div class="row">
 
 
-@if (ViewBag.RoleName == (Designation.Employee))
-{
-    <h3>Exceptions</h3>
-
-<table class="table table-bordered table-striped" style="overflow-x:scroll;">
-    <tr>
-
-        <td>@Model.tables[0].columns[0].name</td>
-        <td>@Model.tables[0].columns[1].name</td>
-        <td>@Model.tables[0].columns[3].name</td>
-        <td>@Model.tables[0].columns[6].name</td>
-        <td>@Model.tables[0].columns[7].name</td>
-        <td>@Model.tables[0].columns[8].name</td>
-        <td>@Model.tables[0].columns[16].name</td>
-        <td>@Model.tables[0].columns[38].name</td>
-        <td>@Model.tables[0].columns[39].name</td>
-        <td>@Model.tables[0].columns[40].name</td>
-    </tr>
-    <tbody>
-        
-            @for (int i = 0; i < Model.tables[0].rows.Count; i++)
-            {
-
-        <tr>
-
-            <td>
-                @Convert.ToString(Model.tables[0].rows[i][0])
-            </td>
-            <td> @Convert.ToString(Model.tables[0].rows[i][1])  </td>
-            <td>  @Convert.ToString(Model.tables[0].rows[i][3])  </td>
-            <td> @Convert.ToString(Model.tables[0].rows[i][6])  </td>
-            <td>  @Convert.ToString(Model.tables[0].rows[i][7])  </td>
-            <td>  @Convert.ToString(Model.tables[0].rows[i][8])  </td>
-            <td style="word-wrap:break-word;">
-                @Convert.ToString(Model.tables[0].rows[i][16])
-            </td>
-            <td>
-                @Convert.ToString(Model.tables[0].rows[i][38])
-            </td>
-            <td>
-                @Convert.ToString(Model.tables[0].rows[i][39])
-            </td>
-            <td>
-                @Convert.ToString(Model.tables[0].rows[i][40])
-            </td>
-        </tr>
-            }
-      
-          
-</tbody>
-</table>
-
-<h3>Events</h3>
+        <br />
+        <br />
 
 
-}
+        @if (ViewBag.RoleName == (Designation.Employee))
+        {
+            <h2 style="align-content:center">Employee's Dashboard</h2>
+            <div class="col-md-12" style="overflow-x:auto;">
+                <h3>Exceptions</h3>
+
+                <table class="table table-bordered table-striped">
+                    <tr>
+
+                        <td>@Model.Exception.tables[0].columns[0].name</td>
+                        <td>@Model.Exception.tables[0].columns[1].name</td>
+                        <td>@Model.Exception.tables[0].columns[2].name</td>
+                        <td>@Model.Exception.tables[0].columns[3].name</td>
+                        <td>@Model.Exception.tables[0].columns[4].name</td>
+                        <td>@Model.Exception.tables[0].columns[5].name</td>
+                        <td>@Model.Exception.tables[0].columns[6].name</td>
+                        @*<td>@Model.Exception.tables[0].columns[38].name</td>
+                        <td>@Model.Exception.tables[0].columns[39].name</td>
+                        <td>@Model.Exception.tables[0].columns[40].name</td>*@
+                    </tr>
+                    <tbody>
+
+                        @for (int i = 0; i < Model.Exception.tables[0].rows.Count; i++)
+                        {
+
+                            <tr>
+
+                                <td>
+                                    @Convert.ToString(Model.Exception.tables[0].rows[i][0])
+                                </td>
+                                <td> @Convert.ToString(Model.Exception.tables[0].rows[i][1])  </td>
+                                <td>  @Convert.ToString(Model.Exception.tables[0].rows[i][2])  </td>
+                                <td style="word-wrap:break-word;"> @Convert.ToString(Model.Exception.tables[0].rows[i][3])  </td>
+                                <td>  @Convert.ToString(Model.Exception.tables[0].rows[i][4])  </td>
+                                <td>  @Convert.ToString(Model.Exception.tables[0].rows[i][5])  </td>
+                                <td>
+                                    @Convert.ToString(Model.Exception.tables[0].rows[i][6])
+                                </td>
+
+                            </tr>
+                        }
 
 
-@if(ViewBag.RoleName==(Designation.Manager))
-    {
-<table class="table table-bordered table-striped">
-    <tr>
-        <td>
-           Total Exception
-        </td>
-    </tr>
-    <tbody>
-        <tr>
-            <td>@Convert.ToString(Model.tables[0].rows[0][0])</td>
-        </tr>
-    </tbody>
-        </table>
-        }
+                    </tbody>
+                </table>
+            </div>
+            <div class="col-md-12" style="overflow-x:auto;">
+                <h3>Traces</h3>
+                <table class="table table-bordered table-striped">
+                    <tr>
+
+                        <td>@Model.Traces.tables[0].columns[0].name</td>
+                        <td>@Model.Traces.tables[0].columns[1].name</td>
+                        <td>@Model.Traces.tables[0].columns[2].name</td>
+                        <td>@Model.Traces.tables[0].columns[3].name</td>
+                        <td>@Model.Traces.tables[0].columns[4].name</td>
+
+                    </tr>
+                    <tbody>
+
+                        @for (int i = 0; i < Model.Traces.tables[0].rows.Count; i++)
+                        {
+
+                            <tr>
+
+                                <td>
+                                    @Convert.ToString(Model.Traces.tables[0].rows[i][0])
+                                </td>
+                                <td> @Convert.ToString(Model.Traces.tables[0].rows[i][1])  </td>
+                                <td>  @Convert.ToString(Model.Traces.tables[0].rows[i][2])  </td>
+                                <td> @Convert.ToString(Model.Traces.tables[0].rows[i][3])  </td>
+                                <td>  @Convert.ToString(Model.Traces.tables[0].rows[i][4])  </td>
+
+                            </tr>
+                        }
+
+
+                    </tbody>
+                </table>
+               
+
+                </div>
+
+                }
+
+
+                @if (ViewBag.RoleName == (Designation.Manager))
+                {
+
+
+
+
+                    <h2 style="text-align:center;">Manager's Dashboard</h2>
+                    <div class="col-md-4">
+                        <h3>Exception</h3>
+
+
+
+
+                        <table class="table table-bordered table-striped">
+                            <tr>
+                                <td>
+                                    Total Exception
+                                </td>
+                            </tr>
+                            <tbody>
+                                <tr>
+                                    <td>@Convert.ToString(Model.Exception.tables[0].rows[0][0])</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+
+                    <div class="col-md-4">
+                        <h3>Traces</h3>
+
+
+                        <table class="table table-bordered table-striped">
+                            <tr>
+                                <td>
+                                    Total Exception
+                                </td>
+                            </tr>
+                            <tbody>
+                                <tr>
+                                    <td>@Convert.ToString(Model.Traces.tables[0].rows[0][0])</td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                    </div>
+                }
+
+
+                <br />
+                <br />
+            </div>

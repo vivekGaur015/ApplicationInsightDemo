@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ExceptionLogging;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -13,7 +14,7 @@ namespace EmployeeApp
         {
             AreaRegistration.RegisterAllAreas();
             RouteConfig.RegisterRoutes(RouteTable.Routes);
-       
+          //  CloudRoleNameInitializer cloudRoleNameInitializer = new CloudRoleNameInitializer("Employee Project");
         }
     }
 }

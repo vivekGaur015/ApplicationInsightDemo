@@ -20,7 +20,7 @@ namespace AzureDashboard
             public IList<IList<object>> rows { get; set; }
         }
 
-        public class Example
+        public class APIData
         {
             public IList<Table> tables { get; set; }
         }

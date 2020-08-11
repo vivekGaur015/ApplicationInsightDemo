@@ -7,9 +7,9 @@ namespace AzureDashboard
 {
     public class LogsViewModel
     {
-        public ExceptionClass.Example Exception { get; set; }
+        public ExceptionClass.APIData Exception { get; set; }
 
-        public ExceptionClass.Example Traces { get; set; }
+        public ExceptionClass.APIData Traces { get; set; }
 
     }
 }

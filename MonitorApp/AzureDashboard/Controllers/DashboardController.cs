@@ -14,16 +14,19 @@ namespace AzureDashboard.Controllers
         // GET: Dashboard
         public ActionResult Index()
         {
-            var ResultData = new ExceptionClass.Example(); 
+            var ResultData = new LogsViewModel(); 
             Designation role = Designation.Manager;
             if (role == Designation.Employee)
             {
 
-                ResultData = CallAzureAPIs.CallExceptionTelemetry();
+                ResultData.Exception = CallAzureAPIs.CallExceptionTelemetry();
+                ResultData.Traces = CallAzureAPIs.GetTraces();
+
             }
             else if (role == Designation.Manager)
             {
-                ResultData = CallAzureAPIs.GetTotalException();
+                ResultData.Exception = CallAzureAPIs.GetTotalException();
+                ResultData.Traces = CallAzureAPIs.GetTotalTraces();
             }
 
             ViewBag.RoleName = role; 

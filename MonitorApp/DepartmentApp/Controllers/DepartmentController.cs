@@ -11,7 +11,6 @@ namespace DepartmentApp.Controllers
     public class DepartmentController : Controller
     {
         public static readonly List<Department> Items = new List<Department>();
-        CloudRoleNameInitializer cloudRoleNameInitializer = new CloudRoleNameInitializer("Department");
         LogException logException = new LogException("Department Project");
         // GET: Home
         public ActionResult Index()
@@ -19,6 +18,7 @@ namespace DepartmentApp.Controllers
             try
             {
                 LogException.TrackInfo("Department Project");
+                throw new Exception("Department Issue");
 
                 if (Items.Count == 0)
                 {
@@ -33,7 +33,7 @@ namespace DepartmentApp.Controllers
             }
             catch (Exception ex)
             {
-               // LogException.TrackException(ex);
+                LogException.TrackException(ex);
                 throw;
             }
           
